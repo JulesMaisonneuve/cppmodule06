@@ -14,7 +14,7 @@ int getType(const std::string value)
 		return (MINFINITY);
 	else if (value == "inf" || value == "inff")
 		return (INFINITY);
-        else if (value == "+inf" || value == "+inff")
+    else if (value == "+inf" || value == "+inff")
 		return (INFINITY);
 	else if (!isdigit(value.at(0)) && value.size() == 1)
 		return (CHAR);
