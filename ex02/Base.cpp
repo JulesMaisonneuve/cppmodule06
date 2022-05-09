@@ -28,6 +28,8 @@ Base * generate(void)
         std::cout << "Creating C class" << std::endl;
         base = new C();
         break ;
+    default:
+        return (NULL);
     }
     return (base);
 }
@@ -53,24 +55,21 @@ void identify(Base& p)
     }
     catch(const std::exception& e)
     {
-        // std::cerr << e.what() << '\n';
     }
-     try
+    try
     {
         (void)dynamic_cast<B&>(p);
          std::cout << "Class B" << std::endl;
     }
     catch(const std::exception& e)
     {
-        // std::cerr << e.what() << '\n';
     }
-     try
+    try
     {
         (void)dynamic_cast<C&>(p);
          std::cout << "Class C" << std::endl;
     }
     catch(const std::exception& e)
     {
-        // std::cerr << e.what() << '\n';
     }
 }

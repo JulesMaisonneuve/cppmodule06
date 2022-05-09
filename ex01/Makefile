@@ -1,4 +1,4 @@
-NAME	= convert
+NAME	= serialize
 FILES	= main.cpp Data.cpp
 OBJ		= $(FILES:%.cpp=%.o)
 CC		= clang++

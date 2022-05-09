@@ -1,5 +1,5 @@
 NAME	= conversion
-FILES	= main.cpp
+FILES	= main.cpp Conversion.cpp
 OBJ		= $(FILES:%.cpp=%.o)
 CC		= clang++
 CFLAGS	= -Wall -Werror -Wextra -std=c++98
