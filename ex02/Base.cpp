@@ -13,7 +13,6 @@ Base * generate(void)
     Base *base;
     srand (time(NULL));
     int res = (rand() % 3);
-    std::cout << res << std::endl;
     switch (res)
     {
     case 0:
