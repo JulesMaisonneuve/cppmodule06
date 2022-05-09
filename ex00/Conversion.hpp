@@ -3,6 +3,10 @@
 
 # include <iostream>
 # include <cctype>
+# include <cstdlib>
+# include <sstream>
+# include <limits.h>
+# include <float.h>
 
 enum dataType
 {
@@ -10,19 +14,10 @@ enum dataType
     CHAR,
     FLOAT,
     DOUBLE,
-    UNKNOWN
-};
-
-class Conversion
-{
-    private:
-    public:
-        Conversion(void);
-        Conversion(const Conversion &other);
-        Conversion &operator=(const Conversion &other);
-        void checkType(const std::string data);
-        ~Conversion(void);
-
+    UNKNOWN,
+    MINFINITY,
+    INFINITY,
+    NAN
 };
 
 #endif
